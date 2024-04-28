@@ -1,0 +1,6 @@
+Character is the Flyweight interface defining the method draw() for drawing characters.
+ConcreteCharacter is the concrete flyweight class implementing the Character interface.
+CharacterFactory is the flyweight factory responsible for managing and creating flyweight objects.
+TextEditor is the client code that uses the flyweight objects to draw characters.
+The CharacterFactory ensures that only one instance of each character is created and reused when needed.
+This way, memory usage is minimized, especially when dealing with a large amount of text.
