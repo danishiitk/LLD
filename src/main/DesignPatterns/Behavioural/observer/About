@@ -1,0 +1,26 @@
+The Observer pattern is a behavioral design pattern where an object, called the subject, maintains a list of its
+dependents, called observers, and notifies them of any state changes, usually by calling one of their methods.
+
+Imagine you have a weather station that collects weather data and multiple display devices that need to show the latest
+weather information. Instead of each display device polling the weather station for updates, the weather station notifies
+the display devices whenever new data is available. This notification mechanism is implemented using the Observer pattern.
+
+**Example in Java:**
+
+Let's consider an example where we have a weather station that collects weather data and displays to multiple display
+devices. We'll create a `WeatherStation` class representing the subject, an `Observer` interface defining the methods
+to be implemented by observers, and concrete observer classes (`PhoneDisplay`, `ComputerDisplay`) representing the
+display devices.
+
+
+
+In this example:
+- The `WeatherStation` class represents the subject, which maintains the temperature data and notifies observers
+when the temperature changes.
+- The `Observer` interface defines the `update` method to be implemented by concrete observers.
+- Concrete observer classes (`PhoneDisplay`, `ComputerDisplay`) represent display devices that receive temperature
+updates from the weather station.
+- In the client code, we create a weather station, display devices, register observers with the weather station,
+and update the temperature. When the temperature changes, observers are notified and display the updated temperature.
+
+
