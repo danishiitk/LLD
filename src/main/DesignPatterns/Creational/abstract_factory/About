@@ -1,0 +1,5 @@
+2 products - Chair and Sofa
+Modern implementation and Victorian implementation of both
+1 Factory interface - FurnitureFactory
+2 ConcreteFactories implementing FurnitureFactory
+
