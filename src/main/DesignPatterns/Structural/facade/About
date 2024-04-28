@@ -1,0 +1,14 @@
+The Facade pattern is a structural design pattern that provides a simplified interface to a complex system of classes,
+ interfaces, or subsystems. It encapsulates the complex functionality of the subsystem and provides a single, unified
+  interface for the client to interact with.
+
+Imagine you're in a hotel and you want to order room service. You don't need to know about all the intricate processes
+ that happen in the kitchen, such as preparing ingredients, cooking, and cleaning. All you need is a menu to choose
+ from and someone to deliver your order. In this scenario, the menu acts as a facade, hiding the complexities of the
+ kitchen subsystem behind a simple interface.
+
+**Example in Java:**
+
+Let's consider an example where we have a complex system consisting of multiple subsystems: a CPU, a Memory, and a
+HardDisk. These subsystems have their own interfaces and functionalities. We'll create a `ComputerFacade` to hide
+the complexities of these subsystems and provide a simplified interface to the client.

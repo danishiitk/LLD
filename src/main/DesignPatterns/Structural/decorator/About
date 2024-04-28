@@ -1,0 +1,15 @@
+//Add methods dynamically in a class/object
+//Decorator has all the functionalities of the Component interface
+
+When you create a decorated coffee object, such as Milk(coffee), you're effectively adding behavior to the base coffee
+object dynamically. The behavior added depends on which decorators are applied and in what order. This allows you to
+compose different combinations of behavior at runtime without modifying the core classes.
+
+The Coffee interface defines the methods cost() and description(), which are implemented by the concrete component
+SimpleCoffee. The CoffeeDecorator abstract class implements the Coffee interface and provides the base functionality
+for the decorators.
+
+Concrete decorators Milk and Sugar extend CoffeeDecorator and add specific functionalities.
+
+In the Main class, we demonstrate how to use these components and decorators to create decorated coffee objects with
+different combinations of functionalities.
