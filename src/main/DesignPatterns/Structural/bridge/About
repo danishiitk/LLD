@@ -1,0 +1,14 @@
+The Shape contains the Task
+
+It involves creating two separate hierarchies:
+one for the abstraction (interface or abstract class) and one for the implementation (concrete classes).
+
+
+The Bridge pattern allows you to define the shape hierarchy independently from the drawing implementation hierarchy.
+This flexibility enables you to add new shapes or drawing implementations without modifying existing code.
+
+Let's consider an example where we have a shape abstraction represented by the `Shape` interface
+and a drawing implementation represented by the `Drawing` interface.
+We'll create concrete shape classes (`Circle`, `Rectangle`)
+and concrete drawing implementations (`PencilDrawing`, `PenDrawing`).
+The Bridge pattern allows us to combine different shapes with different drawing implementations.
