@@ -1,4 +1,4 @@
-package creational;
+package factory;
 
 public class Cat implements Animal {
     @Override
