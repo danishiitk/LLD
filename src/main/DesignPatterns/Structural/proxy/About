@@ -1,0 +1,6 @@
+The constructor of RealImage loads the image as well after creating realImage object
+but
+the constructor of ProxyImage only creates an object of ProxyImage
+The ProxyImage has an instance of the RealImage
+it creates the object of realImage only once
+after that it uses the same realImage object
