@@ -1,0 +1,19 @@
+The context contains: the state
+The state contains the state specific behaviour
+we create an interface of State: so that all the states follow the same protocol
+
+The State design pattern is a behavioral pattern that allows an object to alter its behavior when its internal state
+changes. This pattern is particularly useful when an object's behavior depends on its state, and the behavior changes
+dynamically depending on that state.
+
+By encapsulating each state into a separate class and delegating the state-specific
+behavior to these classes, the State pattern promotes cleaner and more maintainable code.
+
+Here's a breakdown of the components involved in the State pattern:
+Context: This is the object whose behavior changes based on its internal state.
+It maintains a reference to the current state object and delegates state-specific behavior to that object.
+
+State: This is an interface or an abstract class that defines a set of methods for handling requests
+and may contain default implementations. Each concrete state class implements this interface and represents a
+specific state of the context. The state classes encapsulate state-specific behavior.
+
