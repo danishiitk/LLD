@@ -1,0 +1,6 @@
+The Builder design pattern is used to construct complex objects step by step.
+
+Object
+abstract builder - interface builder
+concrete builder - Dominoes, etc
+builder director
