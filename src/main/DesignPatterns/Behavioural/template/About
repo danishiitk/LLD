@@ -1,0 +1,26 @@
+Normal Abstract Class: General methods implemented and some left for specific implementation by base classes
+Code reusability:
+Yes, that's correct. In the Template Method pattern, code reuse is facilitated by defining common concrete methods
+in the parent abstract class. These common methods are part of the algorithm's template and are shared among subclasses.
+By providing default implementations for these methods in the parent class, subclasses inherit these implementations and
+ can focus on implementing only the specific steps that are unique to them.
+
+This promotes code reuse by eliminating the need for subclasses to duplicate code for common steps. Instead, they can
+rely on the template method provided by the parent class, overriding only those methods that require customization for
+their particular context. This approach reduces redundancy, improves maintainability, and ensures consistency in the
+overall structure of the algorithm across different subclasses.
+
+
+
+
+The Template Method pattern is a behavioral design pattern that defines the skeleton of an algorithm in a method,
+deferring some steps to subclasses. It allows subclasses to redefine certain steps of the algorithm without changing
+its structure
+In this example:
+- The `Recipe` abstract class defines the template method `prepareRecipe()` that outlines the general steps for
+cooking a dish.
+- The `addIngredients()` and `cook()` methods are declared as abstract and must be implemented by concrete subclasses.
+- Concrete subclasses (`PizzaRecipe`, `PastaRecipe`) provide implementations for the abstract methods to customize the
+cooking process for each dish.
+- In the client code, we create instances of concrete subclasses and call the `prepareRecipe()` method to cook different
+ dishes following the template method pattern.
