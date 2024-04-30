@@ -1,4 +1,5 @@
-//Add methods dynamically in a class/object
+//Using super keyword to add more behaviour in the sub classes
+//Add methods dynamically in a class/object using the super keyword in the base class
 //Decorator has all the functionalities of the Component interface
 
 When you create a decorated coffee object, such as Milk(coffee), you're effectively adding behavior to the base coffee
