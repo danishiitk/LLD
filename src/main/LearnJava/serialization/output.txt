@@ -1,0 +1,5 @@
+5 10 
+15
+-1
+src\main\java\com\oracle\learn\input.txt
+Danish Ahmad
