@@ -1,4 +1,5 @@
-package graph;
+package graph.cycle;
+
 import java.util.*;
 
 class Graph {

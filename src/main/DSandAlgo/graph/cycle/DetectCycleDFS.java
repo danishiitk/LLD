@@ -1,9 +1,9 @@
-package graph;
+package graph.cycle;
 
 import java.util.ArrayList;
 
 public class DetectCycleDFS {
-    boolean hasCycle(ArrayList<Integer>[] adj, int V){
+    public boolean hasCycle(ArrayList<Integer>[] adj, int V){
         boolean[] visited = new boolean[V];
         for(int src = 0; src<V; src++){
             if(!visited[src]){
