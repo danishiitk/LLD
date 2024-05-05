@@ -1,9 +1,7 @@
 package game;
 
 import board.Board;
-import pieces.Piece;
-import pieces.Color;
-import pieces.PieceType;
+import chess_pieces.Color;
 import players.Player;
 
 import java.util.ArrayDeque;

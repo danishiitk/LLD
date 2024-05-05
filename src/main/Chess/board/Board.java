@@ -1,8 +1,8 @@
 package board;
 
-import pieces.Color;
-import pieces.Piece;
-import pieces.PieceType;
+import chess_pieces.Color;
+import chess_pieces.Piece;
+import chess_pieces.PieceType;
 // Board class to represent the chess board
 public class Board {
     public static final int BOARD_SIZE = 8;

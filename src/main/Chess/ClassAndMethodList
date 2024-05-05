@@ -1,21 +1,21 @@
 Sure, here's a list of all the classes along with their methods:
 Sure, here are all the classes suggested in the design:
-1. Piece
+1. chess_pieces.Piece
 2. Board
 3. Player
 4. Game
 
 Each of these classes plays a specific role in modeling and implementing the chess game.
 Sure, in addition to the classes, there are also enums used in the design:
-1. PieceType
+1. chess_pieces.PieceType
 2. Color
 
-These enums represent different types of chess pieces and colors of the pieces, respectively. They are used
-within the Piece class to define the type and color of each piece.
+These enums represent different types of chess chess_pieces and colors of the chess_pieces, respectively. They are used
+within the chess_pieces.Piece class to define the type and color of each piece.
 
-1. **Piece**
-   - `Piece(PieceType type, Color color)`
-   - `getType(): PieceType`
+1. **chess_pieces.Piece**
+   - `chess_pieces.Piece(chess_pieces.PieceType type, Color color)`
+   - `getType(): chess_pieces.PieceType`
    - `getColor(): Color`
 
 2. **Board**

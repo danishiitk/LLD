@@ -1,8 +1,8 @@
 package players;
 
 import board.Board;
-import pieces.Color;
-import pieces.Piece;
+import chess_pieces.Color;
+import chess_pieces.Piece;
 
 public class Player {
     Color color;

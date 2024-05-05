@@ -1,5 +1,6 @@
-package pieces;
-// Piece class to represent a chess piece
+package chess_pieces;
+
+// pieces.Piece class to represent a chess piece
 public class Piece {
     PieceType pieceType;
     Color color;
