@@ -6,28 +6,29 @@ import pieces.Color;
 import pieces.PieceType;
 import players.Player;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Scanner;
 
 // Game class to control the flow of the game
 public class GameController {
     Board board;
-    Player[] players;
+    Deque<Player> players;
     boolean isGameOver;
 
-    GameController(Player playerToStart) {
+    public GameController() {
         board = new Board();
-        players = new Player[2];
-        players[0] = new Player(Color.WHITE, true);
-        players[1] = new Player(Color.BLACK, false);
+        players = new ArrayDeque<>();
+        players.add(new Player(Color.WHITE, true));
+        players.add(new Player(Color.BLACK, false));
         isGameOver = false;
     }
     public void startGame() {
         // Implement method to start the game
-        // Implement method to start the game
         Scanner scanner = new Scanner(System.in);
         while (!isGameOver()) {
             // Get current player
-            Player currentPlayer = getCurrentPlayer();
+            Player currentPlayer = players.poll();
 
             // Display the board
             displayBoard();
@@ -48,6 +49,9 @@ public class GameController {
             boolean moveSuccess = currentPlayer.makeMove(board, startX, startY, endX, endY);
             if (!moveSuccess) {
                 System.out.println("Invalid move! Try again.");
+                players.addFirst(currentPlayer); //Add the current player again at the front
+            }else{
+                players.add(currentPlayer); // otherwise add at the back
             }
         }
         // Game over

@@ -8,6 +8,7 @@ public class Player {
     Color color;
     boolean isTurn;
     public Player(Color color, boolean isTurn) {
+        this.color = color;
         this.isTurn = true;
     }
 
@@ -30,10 +31,10 @@ public class Player {
         }
 
         boolean moveSuccess = board.movePiece(startX, startY, endX, endY);
-        if (moveSuccess) {
-            // Toggle turn after successful move
-            isTurn = !isTurn;
-        }
+//        if (moveSuccess) {
+//            // Toggle turn after successful move
+//            isTurn = !isTurn;
+//        }
         return moveSuccess;
     }
 
@@ -41,6 +42,7 @@ public class Player {
         // Implement method to check if the move is valid
         Piece piece = board.getPiece(startX, startY);
         if (piece == null) {
+            System.out.println("Here");
             return false; // There is no piece at the start position
         }
 
