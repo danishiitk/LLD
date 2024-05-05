@@ -1,0 +1,43 @@
+Sure, here's a list of all the classes along with their methods:
+Sure, here are all the classes suggested in the design:
+1. Piece
+2. Board
+3. Player
+4. Game
+
+Each of these classes plays a specific role in modeling and implementing the chess game.
+Sure, in addition to the classes, there are also enums used in the design:
+1. PieceType
+2. Color
+
+These enums represent different types of chess pieces and colors of the pieces, respectively. They are used
+within the Piece class to define the type and color of each piece.
+
+1. **Piece**
+   - `Piece(PieceType type, Color color)`
+   - `getType(): PieceType`
+   - `getColor(): Color`
+
+2. **Board**
+   - `Board()`
+   - `initializeBoard()`
+   - `movePiece(int startX, int startY, int endX, int endY): boolean`
+   - `isCheck(Color color): boolean`
+   - `isCheckmate(Color color): boolean`
+
+3. **Player**
+   - `Player(Color color, boolean isTurn)`
+   - `makeMove(Board board, int startX, int startY, int endX, int endY): boolean`
+   - `getColor(): Color`
+   - `isTurn(): boolean`
+
+4. **Game**
+   - `Game()`
+   - `startGame()`
+   - `endGame()`
+   - `isGameOver(): boolean`
+   - `getCurrentPlayer(): Player`
+   - `displayBoard()`
+
+Remember, some of these methods might be private or could involve additional methods or logic within them.
+This list provides a high-level overview of the classes and their functionalities.
